@@ -1,0 +1,146 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #ffe4e1;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+
+.filter-container {
+  max-width: 600px;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-container label {
+  font-weight: 600;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1 1 45%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  flex: 1 1 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+}
+
+li {
+  list-style: none;
+  background: #fff;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+li b {
+  font-size: 1.1rem;
+}
+
+
+li button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.complete-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+  
+  input[type="text"], button[type="submit"] {
+    flex: 1 1 100%;
+  }
+  
+  li button {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+}
+

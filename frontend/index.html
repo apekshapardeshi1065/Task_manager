@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  
+  <div class="filter-container">
+    <label for="filterStatus">Filter Tasks:</label>
+    <select id="filterStatus">
+      <option value="all">All</option>
+      <option value="Pending">Pending</option>
+      <option value="Completed">Completed</option>
+    </select>
+  </div>
+
+
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Title" />
+    <input type="text" id="description" placeholder="Description" />
+    <button type="submit">Add Task</button>
+  </form>
+
+  
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
