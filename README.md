@@ -69,7 +69,7 @@ WEB/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/apekshapardeshi1065/Task_manager.git
+git clone https://github.com/your-username/Task_manager.git
 cd Task_manager/backend
 ```
 
